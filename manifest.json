@@ -1,0 +1,29 @@
+﻿{
+	"name": "tumblr视频下载",
+	"version": "1.0",
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://*.tumblr.com/*"],
+			"css":["style.css"],
+			"js": ["main.js"],
+			"all_frames": true,
+			"run_at":"document_end"
+		}
+	],
+	"permissions": [
+        "contextMenus","*://*.tumblr.com/*"
+	],
+	"icons": {
+		"16": "icon_16.png",
+		"48": "icon_48.png",
+		"128": "icon_128.png"
+	},
+	"browser_action": {
+		"name": "tumblr视频下载",
+		"default_icon": "icon_128.png"
+	},
+	"manifest_version": 2
+}
