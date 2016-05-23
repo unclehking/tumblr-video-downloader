@@ -5,7 +5,6 @@ chrome.contextMenus.create({
 	"documentUrlPatterns":["*://*.tumblr.com/*"]
 });
 chrome.contextMenus.onClicked.addListener(function(info,tab){
-	console.log(window.copy);
 	var rUrl = 'https://vt.tumblr.com/'+
 			   /tumblr_.*/.exec(info.srcUrl)[0].replace(/\//g,"_")+'.mp4',
 	thunderUrl = 'thunder://'+window.btoa('AA'+rUrl+'ZZ');
@@ -13,7 +12,8 @@ chrome.contextMenus.onClicked.addListener(function(info,tab){
 		tab.id,
 		{
 			url:thunderUrl,
-			oldUrl:info.srcUrl
+			oldUrl:info.srcUrl,
+			rUrl:rUrl
 		},
 		function(response){}
 	);

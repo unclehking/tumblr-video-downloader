@@ -8,7 +8,7 @@
 		{
 			"matches": ["*://*.tumblr.com/*"],
 			"css":["style.css"],
-			"js": ["main.js"],
+			"js": ["jquery.min.js","main.js"],
 			"all_frames": true,
 			"run_at":"document_end"
 		}
