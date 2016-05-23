@@ -4,9 +4,9 @@ tumblr视频下载chrome插件（兼容各大“国产”浏览器急速版）
 截图： <br />
 ![github](https://raw.githubusercontent.com/unclehking/tumblrVideoDown/master/s0.jpg "github")  
 
- 离线chrome插件（.crx文件）安装方式：
- 1、打开chrome扩展程序页面 chrome://extensions/ 或者 菜单 > 更多工具> 扩展程序；
- 2、把crx文件拖进该页面。
+ <p>离线chrome插件（.crx文件）安装方式： </p>
+ <p>1、打开chrome扩展程序页面 chrome://extensions/ 或者 菜单 > 更多工具> 扩展程序；</p>
+ <p>2、把。crx文件拖进该页面。</p>
 
 ###2016-05-23
 1、修复video控制条被隐藏的bug； <br />
