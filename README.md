@@ -1,9 +1,15 @@
 # tumblrVideoDown
-tumblr视频迅雷下载chrome插件（兼容各大“国产”浏览器急速版）
+tumblr视频下载chrome插件（兼容各大“国产”浏览器急速版）
 
+截图： <br />
+![github](https://raw.githubusercontent.com/unclehking/tumblrVideoDown/master/s0.jpg "github")  
+
+ 离线chrome插件（.crx文件）安装方式：
+ 1、打开chrome扩展程序页面 chrome://extensions/ 或者 菜单 > 更多工具> 扩展程序；
+ 2、把crx文件拖进该页面。
 
 ###2016-05-23
-1、修复video控制条被隐藏的bug； <br />	
+1、修复video控制条被隐藏的bug； <br />
 2、新增“复制视频真实地址到剪贴板”。
 
 截图： <br />
