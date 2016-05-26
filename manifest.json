@@ -1,6 +1,8 @@
 ﻿{
-	"name": "tumblr视频下载",
+	"name": "__MSG_appName__",
 	"version": "1.0",
+	"default_locale": "zh_CN",
+	"description":"__MSG_description__",
 	"background": {
 		"scripts": ["background.js"]
 	},
@@ -22,7 +24,7 @@
 		"128": "icon_128.png"
 	},
 	"browser_action": {
-		"name": "tumblr视频下载",
+		"name": "__MSG_appName__",
 		"default_icon": "icon_128.png"
 	},
 	"manifest_version": 2
