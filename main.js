@@ -14,18 +14,19 @@ chrome.runtime.onMessage.addListener(
 	}
 );
 
-document.addEventListener('mouseover', function(e) {
+document.addEventListener('mouseover', (e) =>{
 	if(e.target.nodeName == "VIDEO"){
-		var oUrl = e.target.querySelector("source").src;
-		var rUrl = 'https://vt.tumblr.com/'+
-				   /tumblr_.*/.exec(oUrl)[0].replace(/\//g,"_")+'.mp4'
-		var hkingWrap = '<div class="hkingWrap"><input type="text" />'+copyUrl+'<div>'+copyed+'<div></div>';
-		var $this = jQuery(e.target);
-		if(!$this.next().hasClass('hkingWrap')){
-			jQuery($this).after(hkingWrap);
-			$this.next().find('input').val(rUrl);
-			$this.next().click(function(e){
-				var copyTextarea = jQuery(this).find("input");
+		let $t = jQuery(e.target);
+		if(!$t.next().hasClass('hkingWrap')){
+			let oUrl = e.target.querySelector("source").src,
+			    rUrl = `https://vt.tumblr.com/${/tumblr_.*/.exec(oUrl)[0].replace(/\//g,"_")}.mp4`,
+			    hkingWrap = `<div class="hkingWrap">
+								<input type="text" value="${rUrl}" />${copyUrl}
+								<div>${copyed}</div>
+							</div>`;
+			jQuery($t).after(hkingWrap);
+			$t.next().click( (e)=>{
+				let copyTextarea = jQuery(this).find("input");
 				copyTextarea.select();
 				document.execCommand('copy');
 				jQuery(this).find('div').show().delay(2000).fadeOut();
