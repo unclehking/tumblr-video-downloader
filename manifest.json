@@ -4,13 +4,13 @@
 	"default_locale": "zh_CN",
 	"description":"__MSG_description__",
 	"background": {
-		"scripts": ["background.js"]
+		"scripts": ["res/js/background.js"]
 	},
 	"content_scripts": [
 		{
 			"matches": ["*://*.tumblr.com/*"],
-			"css":["style.css"],
-			"js": ["jquery.min.js","main.js"],
+			"css":["res/css/style.css"],
+			"js": ["res/js/jquery.min.js","res/js/main.js"],
 			"all_frames": true,
 			"run_at":"document_end"
 		}
@@ -19,13 +19,13 @@
         "contextMenus","*://*.tumblr.com/*"
 	],
 	"icons": {
-		"16": "icon_16.png",
-		"48": "icon_48.png",
-		"128": "icon_128.png"
+		"16": "res/pic/icon_16.png",
+		"48": "res/pic/icon_48.png",
+		"128": "res/pic/icon_128.png"
 	},
 	"browser_action": {
 		"name": "__MSG_appName__",
-		"default_icon": "icon_128.png"
+		"default_icon": "res/pic/icon_128.png"
 	},
 	"manifest_version": 2
 }
