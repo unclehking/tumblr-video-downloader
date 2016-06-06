@@ -20,8 +20,8 @@ chrome.contextMenus.onClicked.addListener(function(info,tab){
 	);
 });
 
-chrome.browserAction.onClicked.addListener(function(tab) {
-	chrome.tabs.getAllInWindow(null, function(tabs) {
+chrome.browserAction.onClicked.addListener((tab) =>{
+	chrome.tabs.getAllInWindow(null, (tabs) =>{
 		var tTab,url = "www.tumblr.com";
 		for (var i = 0; i < tabs.length; i++) {
 			if (tabs[i].url && tabs[i].url.match(url)) {
@@ -30,7 +30,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 				break;
 			}
 		}
-		if(!tTab) chrome.tabs.create({"url":"https://"+url, "selected":true});
+		!tTab && chrome.tabs.create({"url":`https://${url}`, "selected":true});
 	});
 
 });

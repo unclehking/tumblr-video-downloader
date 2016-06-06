@@ -2,7 +2,7 @@
     "appName": {"message":"tumblr视频下载 -- by HKing"},
     "description": {"message":"tumblr视频下载chrome扩展程序，支持复制实际视屏链接到剪贴板、右键迅雷下载、点击扩展图标打开(如果已打开则激活)tumblr主页。"},
     "copyUrl": {"message":"复制真实视频地址"},
-    "copyed": {"message":"√ 已复制"},
+    "copied": {"message":"√ 已复制"},
     "thunderDl": {"message":"迅雷下载"}
 
 }

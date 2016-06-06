@@ -1,6 +1,6 @@
 ﻿/*HKing 2016-04-29*/
 var ifr, copyUrl = chrome.i18n.getMessage("copyUrl"),
-copyed = chrome.i18n.getMessage("copied");
+copied = chrome.i18n.getMessage("copied");
 chrome.runtime.onMessage.addListener(
 	function(request, sender, sendResponse){
 		var v = document.querySelector("video").querySelector("source");

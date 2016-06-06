@@ -2,6 +2,6 @@
     "appName": {"message":"Tumblr's video downloader"},
     "description": {"message":"Tumblr's video downloader，Copy the actual video link to the clipboard。"},
     "copyUrl": {"message":"Copy the link to clipboard"},
-    "copyed": {"message":"√ Already"},
+    "copied": {"message":"√ Already"},
     "thunderDl": {"message":"Use Thunder"}
 }
