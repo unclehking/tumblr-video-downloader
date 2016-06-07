@@ -1,14 +1,13 @@
 ﻿/*HKing 2016-04-29*/
-var ifr, copyUrl = chrome.i18n.getMessage("copyUrl"),
-copied = chrome.i18n.getMessage("copied");
+var ifr;
+const copyUrl = chrome.i18n.getMessage("copyUrl"),copied = chrome.i18n.getMessage("copied");
 chrome.runtime.onMessage.addListener(
-	function(request, sender, sendResponse){
+	f_nancy = (request, sender, sendResponse) =>{
 		var v = document.querySelector("video").querySelector("source");
 		if(v.src==request.oldUrl || self==top){
-			var isFirst;
-			ifr = ifr || (isFirst=true,document.createElement('iframe'));
+			ifr = ifr || (f_nancy.isFirst=true,document.createElement('iframe'));
 			ifr.src = request.url;
-			isFirst && document.body.appendChild(ifr);
+			f_nancy.isFirst && document.body.appendChild(ifr);
 		};
 	    return false;
 	}
@@ -25,11 +24,10 @@ document.addEventListener('mouseover', (e) =>{
 								<div>${copied}</div>
 							</div>`;
 			jQuery($t).after(hkingWrap);
-			$t.next().click(function(e){
-				let copyTextarea = jQuery(this).find("input");
-				copyTextarea.select();
+			$t.next().click( (event) =>{
+				event.target.querySelector("input").select();
 				document.execCommand('copy');
-				jQuery(this).find('div').show().delay(2000).fadeOut();
+				$(event.target).find('div').show().delay(2000).fadeOut();
 			});
 		}
 
