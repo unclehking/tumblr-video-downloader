@@ -2,7 +2,7 @@
 tumblr视频下载chrome扩展程序（兼容各大“国产”浏览器急速版）
 
 截图： <br />
-![github](https://raw.githubusercontent.com/unclehking/tumblrVideoDown/master/res/pic/s0.jpg "github")  
+![github](https://raw.githubusercontent.com/unclehking/tumblrVideoDown/master/screenshot/s0.jpg "github")  
 
  <div>###离线chrome扩展程序（.crx文件）安装方式： </div>
  <div>1、打开chrome扩展程序页面 chrome://extensions/ 或者 菜单 > 更多工具> 扩展程序；</div>
@@ -13,8 +13,8 @@ tumblr视频下载chrome扩展程序（兼容各大“国产”浏览器急速�
 <div>2、新增“复制视频真实地址到剪贴板”。</div>
 
 截图： <br />
-![github](https://raw.githubusercontent.com/unclehking/tumblrVideoDown/master/res/pic/s1.png "github")  
-![github](https://raw.githubusercontent.com/unclehking/tumblrVideoDown/master/res/pic/s2.png "github")  
+![github](https://raw.githubusercontent.com/unclehking/tumblrVideoDown/master/screenshot/s1.png "github")  
+![github](https://raw.githubusercontent.com/unclehking/tumblrVideoDown/master/screenshot/s2.png "github")  
 
 css：
 ```java  
