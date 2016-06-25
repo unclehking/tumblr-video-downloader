@@ -1,25 +1,43 @@
-﻿/*HKing 2016-04-29*/
+﻿/*HKing 2016-06-25*/
 const thunderDl =  chrome.i18n.getMessage("thunderDl");
+const download = chrome.i18n.getMessage("download");
 const url = "www.tumblr.com";
-
+chrome.contextMenus.ACTION_MENU_TOP_LEVEL_LIMIT = 5;
 chrome.contextMenus.create({
 	"title": thunderDl,
 	"contexts":["video"],
+	"id":"thunderDownload",
+	"documentUrlPatterns":["*://*.tumblr.com/*"]
+});
+chrome.contextMenus.create({
+	"title": download,
+	"contexts":["video"],
+	"id":"chromeDownload",
 	"documentUrlPatterns":["*://*.tumblr.com/*"]
 });
 
 chrome.contextMenus.onClicked.addListener((info,tab)=>{
 	let rUrl = `https://vt.tumblr.com/${/tumblr_.*/.exec(info.srcUrl)[0].replace(/\//g,"_")}.mp4`,
 	thunderUrl = `thunder://${window.btoa(`AA${rUrl}ZZ`)}`;
-	chrome.tabs.sendMessage(
-		tab.id,
-		{
-			url:thunderUrl,
-			oldUrl:info.srcUrl,
-			rUrl:rUrl
-		},
-		response=>{}
-	);
+	if(info.menuItemId === "thunderDownload"){
+		chrome.tabs.sendMessage(
+			tab.id,
+			{
+				url:thunderUrl,
+				oldUrl:info.srcUrl,
+				rUrl:rUrl
+			},
+			response=>{}
+		);
+	}else{
+		chrome.downloads.download(
+			{
+				url:rUrl
+			},
+			id=>{}
+		);
+	}
+
 });
 
 chrome.browserAction.onClicked.addListener( tab =>{
