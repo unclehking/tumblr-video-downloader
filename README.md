@@ -19,4 +19,4 @@ tumblr视频下载chrome扩展程序（兼容各大“国产”浏览器急速�
 ### 2016-06-25
 <div>1、新增直接使用浏览器下载功能，方便tumblr被墙后使用浏览器代理而不能使用迅雷下载的用户； </div>
 截图： <br />
-![github](https://raw.githubusercontent.com/unclehking/tumblrVideoDown/master/screenshot/s3.jpg "github")  
+![github](screenshot/s3.jpg "github")  
