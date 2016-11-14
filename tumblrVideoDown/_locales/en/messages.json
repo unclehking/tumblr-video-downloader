@@ -1,8 +1,9 @@
 {
     "appName": {"message":"Tumblr video downloader"},
-    "description": {"message":"Download any Tumblr video."},
+    "shortName": {"message":"A Chrome Extension for download Tumblr video."},
+    "description": {"message":"A Chrome Extension for easily download video from Tumblr website."},
     "copyUrl": {"message":"Copy the link to clipboard"},
     "copied": {"message":"√ Already"},
-    "thunderDl": {"message":"Use Thunder"},
-    "download": {"message":"Download"}
+    "thunderDl": {"message":"Use Thunder download"},
+    "download": {"message":"Use Chrome download"}
 }
