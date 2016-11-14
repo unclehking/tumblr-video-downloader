@@ -1,6 +1,9 @@
 # tumblrVideoDown
 tumblr视频下载chrome扩展程序（兼容各大“国产”浏览器急速版）
 
+###chrome网上应用商店：
+https://chrome.google.com/webstore/detail/njnkdhldbefijmdmjongfghcelgajjli/publish-accepted?utm_source=en-et-na-us-oc-webstrapp 
+
 截图： <br />
 ![github](https://raw.githubusercontent.com/unclehking/tumblrVideoDown/master/screenshot/s0.jpg "github")  
 <font color=red>
