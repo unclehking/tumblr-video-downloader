@@ -1,0 +1,44 @@
+/*HKing 2016-04-29*/
+video.vjs-tech{
+	position: absolute !important;
+	top: 0px !important;
+	left: 0px !important;
+	z-index: 998 !important;
+}
+.hkingWrap{
+	position: absolute;
+	right: 4px;
+	top: 4px;
+	padding: 0 6px;
+	height: 28px;
+	line-height: 28px;
+	z-index: 999 !important;
+	background-color: #ff0000;
+	display: none;
+	text-align: center;
+	border-radius: 4px;
+	cursor: pointer;
+	overflow: hidden;
+}
+.hkingWrap > div{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+	color: #ffffff;
+	width: 100%;
+	height: 100%;
+	line-height: 28px;
+	text-align: center;
+	background-color: green;
+}
+.crt-video:hover .hkingWrap{
+	display: block;
+}
+.hkingWrap input{
+	position: absolute;
+	top: -999px;
+}
+.crt-skin-default.vjs-has-started .vjs-control-bar{
+	z-index: 1000 !important;
+}
