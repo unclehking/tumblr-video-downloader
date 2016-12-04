@@ -1,6 +1,6 @@
 ﻿/*HKing 2016-04-29*/
 // var ifr;
-// const copyUrl = chrome.i18n.getMessage("copyUrl"),copied = chrome.i18n.getMessage("copied");
+const copyUrl = chrome.i18n.getMessage("copyUrl"),copied = chrome.i18n.getMessage("copied");
 // chrome.runtime.onMessage.addListener(
 // 	f_nancy = (request, sender, sendResponse) =>{
 // 		var v = document.querySelector("video").querySelector("source");
@@ -15,11 +15,14 @@
 
 document.addEventListener('mouseover', (e) =>{
 	if(e.target.nodeName == "VIDEO"){
+
 		let $t = jQuery(e.target);
+
 		if(!$t.next().hasClass('hkingWrap')){
-			let oUrl = e.target.querySelector("source").src,
-			    rUrl = `https://vt.tumblr.com/${/tumblr_.*/.exec(oUrl)[0].replace(/\//g,"_")}.mp4`,
-			    hkingWrap = `<div class="hkingWrap">
+
+			let oUrl = e.target.querySelector("source").src;
+			let rUrl = `https://vt.tumblr.com/${/tumblr_.*/.exec(oUrl)[0].replace(/\//g,"_")}.mp4`;
+			let hkingWrap = `<div class="hkingWrap">
 								<input type="text" value="${rUrl}" />${copyUrl}
 								<div>${copied}</div>
 							</div>`;

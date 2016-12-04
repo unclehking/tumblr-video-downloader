@@ -41,6 +41,14 @@
 //
 // });
 
+chrome.contextMenus.create({
+	id: "clickme",
+    title: "Click me!",
+  	contexts: ["all"],
+	documentUrlPatterns: ["*://*.tumblr.com/*"]
+});
+
+
 const  url="d3d3LnR1bWJsci5jb20=";
 browser.browserAction.onClicked.addListener((tab) =>{
 	function logTabs(tabs){
