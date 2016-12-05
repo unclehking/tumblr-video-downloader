@@ -3,7 +3,7 @@
 	"short_name": "__MSG_shortName__",
 	"version": "1.3",
 	"author": "HKing",
-	"default_locale": "zh_CN",
+	"default_locale": "en",
 	"description":"__MSG_description__",
 	"background": {
 		"scripts": ["res/js/background.js"]

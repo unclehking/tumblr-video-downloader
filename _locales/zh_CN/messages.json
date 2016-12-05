@@ -1,9 +1,7 @@
 {
     "appName": {"message":"tumblr视频下载"},
-    "shortName": {"message":"tumblr视频下载右键扩展程序"},
-    "description": {"message":"tumblr视频下载chrome扩展程序，支持复制实际视屏链接到剪贴板、右键迅雷下载、直接使用浏览器下载、点击扩展图标打开(如果已打开则激活)tumblr主页。"},
-    "copyUrl": {"message":"复制真实视频地址"},
-    "copied": {"message":"√ 已复制"},
-    "thunderDl": {"message":"使用迅雷下载"},
-    "download": {"message":"使用浏览器下载"}
+    "shortName": {"message":"tumblr视频下载Firefox附加组件"},
+    "description": {"message":"tumblr视频下载Firefox附加组件，点击扩展图标打开(如果已打开则激活)tumblr主页。"},
+    "downloading": {"message":"√ 开始下载"},
+    "download": {"message":"下载此视频"}
 }
