@@ -1,6 +1,6 @@
 ﻿/*HKing 2016-12-5*/
 
-const download = browser.i18n.getMessage("download"), downloading = browser.i18n.getMessage("downloading");
+const download = "Download this video", downloading = "√ Downloading";
 document.addEventListener('mouseover', (e) =>{
 	if(e.target.nodeName == "VIDEO"){
 		let $t = jQuery(e.target);

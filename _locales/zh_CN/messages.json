@@ -1,7 +1,0 @@
-{
-    "appName": {"message":"tumblr视频下载"},
-    "shortName": {"message":"tumblr视频下载Firefox附加组件"},
-    "description": {"message":"tumblr视频下载Firefox附加组件，点击扩展图标打开(如果已打开则激活)tumblr主页。"},
-    "downloading": {"message":"√ 开始下载"},
-    "download": {"message":"下载此视频"}
-}

@@ -1,8 +1,0 @@
-{
-    "appName": {"message":"Tumblr video downloader"},
-    "shortName": {"message":"A Firefox WebExtension for download Tumblr video."},
-    "description": {"message":"A Firefox WebExtension for easily download video from Tumblr website."},
-    "downloading": {"message":"√ Downloading"},
-    "download": {"message":"Download this video"}
-
-}
