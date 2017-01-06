@@ -1,10 +1,10 @@
 ﻿{
-	"name": "__MSG_appName__",
-	"short_name": "__MSG_shortName__",
+	"name": "Tumblr Video Downloader",
+	"short_name": "A Chrome Extension for download Tumblr video.",
 	"version": "1.3",
 	"author": "HKing",
 	"default_locale": "zh_CN",
-	"description":"__MSG_description__",
+	"description":"A Chrome Extension for easily download video from Tumblr website.",
 	"background": {
 		"scripts": ["res/js/background.js"]
 	},
@@ -26,9 +26,9 @@
 		"128": "res/pic/icon_128.png"
 	},
 	"browser_action": {
-		"name": "__MSG_appName__",
+		"name": "Tumblr Video Downloader",
 		"default_icon": "res/pic/icon_128.png"
 	},
 	"manifest_version": 2
-	
+
 }

@@ -9,17 +9,20 @@ video.vjs-tech{
 	position: absolute;
 	right: 4px;
 	top: 4px;
-	padding: 0 6px;
 	width: 60px;
 	height: 60px;
 	border-radius: 100%;
 	line-height: 28px;
 	z-index: 999 !important;
 	background-color: #ff0000;
-	display: block;
+	display: none;
 	text-align: center;
 	cursor: pointer;
 	overflow: hidden;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+				4px 0 6px rgba(0, 0, 0, 0.1),
+				0 -4px 6px rgba(0, 0, 0, 0.1),
+				-4px 0 6px rgba(0, 0, 0, 0.1);
 }
 .hkingWrap::before{
 	display: block;
@@ -68,7 +71,39 @@ video.vjs-tech{
 	transform: rotate(45deg);
 }
 
-.hkingWrap > div
+.hkingWrap > p{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: green;
+	position: relative;
+	z-index: 998;
+}
+.hkingWrap > p:before{
+	display: block;
+	content: " ";
+	height: 20px;
+	width: 4px;
+	background-color: #fff;
+	border-radius: 3px;
+	position: absolute;
+	left: 19px;
+	bottom: 13px;
+	transform: rotate(-45deg);
+}
+.hkingWrap > p:after{
+	display: block;
+	content: " ";
+	height: 32px;
+	width: 4px;
+	background-color: #fff;
+	border-radius: 3px;
+	position: absolute;
+	left: 34px;
+	bottom: 12px;
+	transform: rotate(40deg);
+}
+
 .crt-video:hover .hkingWrap{
 	display: block;
 }
