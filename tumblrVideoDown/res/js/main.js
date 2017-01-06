@@ -19,15 +19,16 @@ document.addEventListener('mouseover', (e) =>{
 		if(!$t.next().hasClass('hkingWrap')){
 			let oUrl = e.target.querySelector("source").src,
 			    rUrl = `https://vt.tumblr.com/${/tumblr_.*/.exec(oUrl)[0].replace(/\//g,"_")}.mp4`,
-			    hkingWrap = `<div class="hkingWrap">
-								<input type="text" value="${rUrl}" />${copyUrl}
-								<div>${copied}</div>
+			    hkingWrap = `<div class="hkingWrap" data-url="${rUrl}">
+								<div></div>
 							</div>`;
-			jQuery($t).after(hkingWrap);
+
+			jQuery($t).after($btn);
 			$t.next().click( (event) =>{
-				event.target.querySelector("input").select();
-				document.execCommand('copy');
-				$(event.target).find('div').show().delay(2000).fadeOut();
+				alert(event.target.dataset.url)
+				// event.target.querySelector("input").select();
+				// document.execCommand('copy');
+				// $(event.target).find('div').show().delay(2000).fadeOut();
 			});
 		}
 

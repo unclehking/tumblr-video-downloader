@@ -10,35 +10,69 @@ video.vjs-tech{
 	right: 4px;
 	top: 4px;
 	padding: 0 6px;
-	height: 28px;
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
 	line-height: 28px;
 	z-index: 999 !important;
 	background-color: #ff0000;
-	display: none;
+	display: block;
 	text-align: center;
-	border-radius: 4px;
 	cursor: pointer;
 	overflow: hidden;
 }
-.hkingWrap > div{
+.hkingWrap::before{
+	display: block;
+	content: " ";
+	width: 26px;
+	height: 4px;
+	background-color: #fff;
+	border-radius: 3px;
 	position: absolute;
-	left: 0;
-	top: 0;
-	display: none;
-	color: #ffffff;
-	width: 100%;
-	height: 100%;
-	line-height: 28px;
-	text-align: center;
-	background-color: green;
+	left: 16px;
+	bottom: 12px;
 }
+.hkingWrap::after{
+	display: block;
+	content: " ";
+	height: 32px;
+	width: 4px;
+	background-color: #fff;
+	border-radius: 3px;
+	position: absolute;
+	left: 27px;
+	bottom: 20px;
+}
+.hkingWrap > div::before{
+	display: block;
+	content: " ";
+	height: 22px;
+	width: 4px;
+	background-color: #fff;
+	border-radius: 3px;
+	position: absolute;
+	left: 20px;
+	bottom: 18px;
+	transform: rotate(-45deg);
+}
+.hkingWrap > div::after{
+	display: block;
+	content: " ";
+	height: 22px;
+	width: 4px;
+	background-color: #fff;
+	border-radius: 3px;
+	position: absolute;
+	left: 34px;
+	bottom: 18px;
+	transform: rotate(45deg);
+}
+
+.hkingWrap > div
 .crt-video:hover .hkingWrap{
 	display: block;
 }
-.hkingWrap input{
-	position: absolute;
-	top: -999px;
-}
+
 .crt-skin-default.vjs-has-started .vjs-control-bar{
 	z-index: 1000 !important;
 }
