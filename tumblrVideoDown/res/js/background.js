@@ -10,7 +10,7 @@ chrome.runtime.onMessage.addListener(
 		sendResponse({info:"downloading"});
 	}
 );
-
+const url = "www.tumblr.com";
 chrome.browserAction.onClicked.addListener( tab =>{
 	chrome.tabs.getAllInWindow(null, f_nancy = tabs =>{
 		for(let t of tabs){
