@@ -5,9 +5,9 @@ tumblr视频下载chrome扩展程序（兼容各大“国产”浏览器急速�
 https://chrome.google.com/webstore/detail/njnkdhldbefijmdmjongfghcelgajjli/publish-accepted?utm_source=en-et-na-us-oc-webstrapp
 
 截图： <br />
-![github](http://tumblrdownloader.oss-cn-shenzhen.aliyuncs.com/1.webp")  
-![github](http://tumblrdownloader.oss-cn-shenzhen.aliyuncs.com/2.webp")  
-![github](http://tumblrdownloader.oss-cn-shenzhen.aliyuncs.com/3.webp")  
+![image](http://tumblrdownloader.oss-cn-shenzhen.aliyuncs.com/1.webp")  
+![image](http://tumblrdownloader.oss-cn-shenzhen.aliyuncs.com/2.webp")  
+![image](http://tumblrdownloader.oss-cn-shenzhen.aliyuncs.com/3.webp")  
 
 
 ### 离线chrome扩展程序（.crx文件）安装方式：
