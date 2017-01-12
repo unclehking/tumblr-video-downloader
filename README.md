@@ -7,7 +7,7 @@ https://chrome.google.com/webstore/detail/njnkdhldbefijmdmjongfghcelgajjli/publi
 截图： <br />
 ![github](https://raw.githubusercontent.com/unclehking/tumblrVideoDown/master/screenshot/1.webp "github")  
 ![github](https://raw.githubusercontent.com/unclehking/tumblrVideoDown/master/screenshot/2.webp "github")  
-![github](https://raw.githubusercontent.com/unclehking/tumblrVideoDown/master/screenshot/4.webp "github")  
+![github](https://raw.githubusercontent.com/unclehking/tumblrVideoDown/master/screenshot/3.webp "github")  
 <font color=red>
 ### 离线chrome扩展程序（.crx文件）安装方式：
  <div>1、打开chrome扩展程序页面 chrome://extensions/ 或者 菜单 > 更多工具> 扩展程序；</div>
