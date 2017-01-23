@@ -4,6 +4,9 @@ tumblr视频下载chrome扩展程序（兼容各大“国产”浏览器急速�
 ###chrome网上应用商店：
 https://chrome.google.com/webstore/detail/njnkdhldbefijmdmjongfghcelgajjli/publish-accepted?utm_source=en-et-na-us-oc-webstrapp
 
+### Firefox附加组件商店：
+https://addons.mozilla.org/zh-CN/firefox/addon/tumblrvideodownloader/
+
 截图： <br />
 ![github](https://raw.githubusercontent.com/unclehking/tumblrVideoDown/master/screenshot/1.webp "github")  
 ![github](https://raw.githubusercontent.com/unclehking/tumblrVideoDown/master/screenshot/2.webp "github")  
