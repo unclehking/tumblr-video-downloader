@@ -1,7 +1,9 @@
-﻿{
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
 	"name": "Tumblr Video Downloader",
 	"short_name": "A Chrome Extension for download Tumblr video.",
-	"version": "1.5",
+	"version": "1.6",
 	"author": "HKing",
 	"description":"A Chrome Extension for easily download video from Tumblr website.",
 	"background": {

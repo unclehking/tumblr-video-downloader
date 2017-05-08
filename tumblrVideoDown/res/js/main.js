@@ -1,6 +1,17 @@
-﻿/*HKing 2016-04-29*/
+/*HKing 2016-04-29*/
 
-
+var ifr;
+chrome.runtime.onMessage.addListener(
+	f_nancy = (request, sender, sendResponse) =>{
+		var v = document.querySelector("video").querySelector("source");
+		if(v.src==request.oldUrl || self==top){
+			ifr = ifr || (f_nancy.isFirst=true,document.createElement('iframe'));
+			ifr.src = request.url;
+			f_nancy.isFirst && document.body.appendChild(ifr);
+		};
+	    return false;
+	}
+);
 document.addEventListener('mouseover', (e) =>{
 	if(e.target.nodeName == "VIDEO"){
 		let $t = jQuery(e.target);
