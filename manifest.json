@@ -1,7 +1,7 @@
 ﻿{
 	"name": "Tumblr video downloader",
 	"short_name": "A Firefox WebExtension for download Tumblr video",
-	"version": "1.0",
+	"version": "1.1",
 	"author": "HKing",
 	"description":"A Firefox WebExtension for easily download video from Tumblr website.",
 	"background": {
